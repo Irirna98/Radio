@@ -8,7 +8,9 @@ public class Radio {
     public Radio() {
         maxStation = 9;
     }
-
+    public Radio (int stationCound){
+        maxStation = stationCound -1;
+    }
     public void next() {
         if (currentStation != maxStation) {
             currentStation++;
